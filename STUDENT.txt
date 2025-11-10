@@ -1,0 +1,9 @@
+APP_URL=<url_aplikasi>
+MAP_SERVICE_API_KEY=<api_key>
+
+# Notes:
+# - If you have a Story API endpoint, set CONFIG.BASE_URL in src/scripts/config.js to that base URL (e.g. https://example.com/api)
+# - The map page uses Leaflet and will fallback to local sample-data.json if no API is configured.
+# - To enable multiple tile layers, no API key is required for OSM and Stamen used here.
+
+# NOTE: MVP pattern applied for Home and About via presenters. Add page includes camera capture (mediaDevices.getUserMedia). Ensure to test camera on a secure context (https or localhost).

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>Story Flow</title>
+
+    <link
+      integrity="sha256-sA+e2kG2k3QmT0b8n2m0e6e6s1M0K1jv6t2Z5c5m0kM="
+      crossorigin=""
+    />
+    <meta name="theme-color" content="#3b3558" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Drawer Navigasi -->
+    <nav id="navigation-drawer" class="navigation-drawer">
+      <ul class="nav-list">
+        <li><a href="#/" class="active">🏠 Beranda</a></li>
+        <li><a href="#/profile">👤 Profil</a></li>
+        <li><a href="#/about">💬 Tentang</a></li>
+        <li>
+          <button id="push-toggle-mobile" class="btn-subscribe">
+            💌 Subscribe
+          </button>
+        </li>
+        <!-- Bagian di dalam drawer untuk tampilan mobile -->
+        <li>
+          <button id="install-storyflow-mobile" class="btn-install">
+            Install StoryFlow 📲
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">StoryFlow</a>
+        <button id="drawer-button" class="drawer-button">☰</button>
+        <!-- Drawer Navigasi -->
+        <div class="main-nav">
+          <nav class="nav-desktop">
+            <ul class="nav-list">
+              <li><a href="#/">Beranda</a></li>
+              <li><a href="#/profile">Profil</a></li>
+              <li><a href="#/about">Tentang</a></li>
+              <li>
+                <button id="push-toggle" class="btn-subscribe">
+                  💌 Subscribe
+                </button>
+              </li>
+              <li>
+                <button id="install-storyflow" class="btn-install">
+                  Install StoryFlow 📲
+                </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+
+    <footer class="app-footer">
+      <p>© StoryFlow • Dibuat dengan ❤️ oleh <strong>Nur Hidayati</strong></p>
+    </footer>
+  </body>
+
+  <script>
+    const toggle = document.getElementById("drawer-button");
+    const drawer = document.getElementById("navigation-drawer");
+
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("active");
+      drawer.classList.toggle("open");
+    });
+  </script>
+</html>
