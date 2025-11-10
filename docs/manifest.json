@@ -1,0 +1,76 @@
+{
+  "name": "StoryFlow",
+  "short_name": "StoryFlow",
+  "description": "Aplikasi berbagi cerita dengan dukungan offline dan notifikasi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b3558",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/mobile.png",
+      "sizes": "1920x1043",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/tentang_mobile.png",
+      "sizes": "1920x1043",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/phone.png",
+      "sizes": "1080x2280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "images/navigasi_phone.png",
+      "sizes": "1080x2280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "images/tentang_phone.png",
+      "sizes": "1080x2280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Buka Beranda",
+      "short_name": "Beranda",
+      "description": "Langsung ke halaman utama StoryFlow",
+      "url": "/#/home",
+      "icons": [
+        { "src": "logo.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "Tambah Cerita",
+      "short_name": "Tambah",
+      "description": "Langsung ke halaman tambah cerita",
+      "url": "/#/add",
+      "icons": [
+        { "src": "logo.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    }
+  ]
+}
